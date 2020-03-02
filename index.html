@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="landing">
+      <div class="landing__title">
+        GameZone
+      </div>
+      <div class="landing__bg_image">
+        <div class="shape__container">
+          <svg class="shape">
+            <g class="shape__circle">
+              <circle
+                cx="150"
+                cy="150"
+                r="100"
+                class="shape__circle--outter"
+                filter="url('#filterBlurOut')"
+              />
+              <circle
+                cx="150"
+                cy="150"
+                r="100"
+                class="shape__circle--medium"
+                filter="url('#filterBlurMed')"
+              />
+              <circle cx="150" cy="150" r="100" class="shape__circle--inner" />
+            </g>
+          </svg>
+        </div>
+        <div class="shape__container">
+          <svg class="shape">
+            <g class="shape__square">
+              <path
+                d="M0,0L0,200L200,200L200,0Z"
+                class="shape__square--outter"
+                filter="url('#filterBlurOut')"
+              />
+              <path
+                d="M0,0L0,200L200,200L200,0Z"
+                class="shape__square--medium"
+                filter="url('#filterBlurMed')"
+              />
+              <path
+                d="M0,0L0,200L200,200L200,0Z"
+                class="shape__square--inner"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="shape__container">
+          <svg class="shape">
+            <g class="shape__triangle">
+              <path
+                d="M0,200L100,0L200,200Z"
+                class="shape__triangle--outter"
+                filter="url('#filterBlurOut')"
+              />
+              <path
+                d="M0,200L100,0L200,200Z"
+                class="shape__triangle--medium"
+                filter="url('#filterBlurMed')"
+              />
+              <path d="M0,200L100,0L200,200Z" class="shape__triangle--inner" />
+            </g>
+          </svg>
+        </div>
+        <div class="shape__container">
+          <svg class="shape">
+            <defs>
+              <filter
+                id="filterBlurMed"
+                filterUnits="userSpaceOnly"
+                x="-50%"
+                y="-50%"
+                width="200%"
+                height="200%"
+              >
+                <feGaussianBlur stdDeviation="5,10"></feGaussianBlur>
+              </filter>
+              <filter
+                id="filterBlurOut"
+                filterUnits="userSpaceOnly"
+                x="-50%"
+                y="-50%"
+                width="200%"
+                height="200%"
+              >
+                <feGaussianBlur stdDeviation="20,20"></feGaussianBlur>
+              </filter>
+            </defs>
+            <g class="shape__x">
+              <path
+                d="M0,200L200,0M200,200L0,0"
+                class="shape__x--outter"
+                filter="url('#filterBlurOut')"
+              />
+              <path
+                d="M0,200L200,0M200,200L0,0"
+                class="shape__x--medium"
+                filter="url('#filterBlurMed')"
+              />
+              <path d="M0,200L200,0M200,200L0,0" class="shape__x--inner" />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="btn btn--landing">
+        Lets go
+        <div class="btn__image">
+          <svg>
+            <g class="btn__image--arrows">
+              <path d="M10,0L25,13L40,0" />
+              <path d="M10,0L25,13L40,0" />
+              <path d="M10,0L25,13L40,0" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
